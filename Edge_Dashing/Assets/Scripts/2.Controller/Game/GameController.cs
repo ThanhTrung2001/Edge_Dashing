@@ -29,4 +29,24 @@ public class GameController : MonoBehaviour
   {
         
   }
+
+  public void IncrementScore()
+  {
+    if(isGameOver == false)
+    {
+      score++;
+    }
+  }
+
+  public void SetGameOver()
+  {
+    isGameOver = true;
+  }
+
+  public void CheckCanJump()
+  {
+    canJump = true;
+  }
+
+  
 }
